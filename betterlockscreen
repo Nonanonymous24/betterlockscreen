@@ -26,8 +26,8 @@ init_filenames() {
 	timecolor=ffffffff
 	datecolor=ffffffff
 	loginbox=00000066
-	font="sans-serif"
-	locktext='Type password to unlock...'
+	font="JetBrains Mono"
+	locktext='Enter your password...'
 	wallpaper_cmd='feh --bg-fill --no-fehbg'
 
 	# override defaults with config
@@ -97,7 +97,7 @@ lock() {
 		--radius=20 --ring-width=4 --veriftext='' --wrongtext='' \
 		--verifcolor="$verifcolor" --timecolor="$timecolor" --datecolor="$datecolor" \
 		--time-font="$font" --date-font="$font" --layout-font="$font" --verif-font="$font" --wrong-font="$font" \
-		--noinputtext='' --force-clock --pass-media-keys $lockargs
+		--noinputtext='' --force-clock --pass-media-keys $lockargs --timestr="%I:%M %p"
 
 }
 
