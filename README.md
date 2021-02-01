@@ -1,20 +1,11 @@
+This fork does a simple change to the original: Changes the time format to 12-hr and the font to JetBrains Mono
+
+
 # betterlockscreen
 
 > simple, minimal lockscreen
 
 Betterlockscreen allows you to cache images with different filters and lockscreen with blazing speed.
-
-## Example
-
-> lockscreen with blurred effect
-
-```sh
-betterlockscreen --lock blur
-```
-
-![scrot2](https://github.com/pavanjadhaw/betterlockscreen.demo/raw/master/scrots/scrot2.png 'scrot2.png')
-
-> [Watch some of the features of betterlockscreen in action](https://www.youtube.com/watch?v=9Ng5FZwnn6M&feature=youtu.be)
 
 ## Table of Contents
 
@@ -49,25 +40,18 @@ images as lockscreen background depending on argument provided by user.
 - [i3lock-color](https://github.com/Raymo111/i3lock-color) - i3lock fork with additional features( >= 2.11-c )
 - [imagemagick](https://www.imagemagick.org/script/index.php) - To apply effects to images
 - [xdpyinfo](https://www.x.org/archive/X11R7.7/doc/man/man1/xdpyinfo.1.xhtml), [xrandr](https://www.x.org/wiki/Projects/XRandR/), [bc](https://www.gnu.org/software/bc/) and [feh](https://feh.finalrewind.org/) - To find screen resolution, set custom blur level and wallpaper handling.
+- JetBrains Mono Font 
 
 ### Installation
 
 > manual installation
 
 ```sh
-git clone https://github.com/pavanjadhaw/betterlockscreen
+git clone https://github.com/Nonanonymous24/betterlockscreen-12hr
 cd betterlockscreen
 cp betterlockscreen ~/.local/bin/
 ```
-
 <p style="text-align: center">OR</p>
-
-```sh
-# or wget the script ~12KB
-wget -O betterlockscreen https://git.io/fASUJ
-chmod u+x betterlockscreen
-cp betterlockscreen ~/.local/bin/
-```
 
 ```sh
 # Add betterlockscreen to PATH:
@@ -84,25 +68,6 @@ export PATH="${PATH}:${HOME}/.local/bin/"
 `pacman -S imagemagick feh xorg-xrandr xorg-xdpyinfo`
 
 - i3lock-color - `trizen -S i3lock-color`
-
-#### Aur package
-
-`betterlockscreen` is available in the Arch User repos as `betterlockscreen` and `betterlockscreen-git`.
-
-- betterlockscreen - `trizen -S betterlockscreen`
-- betterlockscreen-git - `trizen -S betterlockscreen-git`
-
-#### Debian and derivatives
-
-UtkarshVerma was so kind to provide an installation script for debian based systems, ![check it out here](https://github.com/UtkarshVerma/installer-scripts).
-
-#### Void Linux
-
-##### xbps repository
-
-`betterlockscreen` is available in official Void's repository as `betterlockscreen`.
-
-Installing using `xbps` (will automatically install all required dependencies): `xbps-install -S betterlockscreen`
 
 ### Configuration
 
@@ -230,34 +195,3 @@ systemctl enable betterlockscreen@$USER
 # disable systemd service
 systemctl disable betterlockscreen@$USER
 
-
-# Note: Now you can call systemctl suspend to suspend your system
-# and betterlockscreen service will be activated
-# so when your system wakes your screen will be locked.
-```
-
----
-
-### Countributing
-
-Thanks to all the amazing people for all your wonderful PRs, issues and ideas!
-
-[![](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/images/0)](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/links/0)[![](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/images/1)](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/links/1)[![](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/images/2)](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/links/2)[![](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/images/3)](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/links/3)[![](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/images/4)](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/links/4)[![](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/images/5)](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/links/5)[![](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/images/6)](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/links/6)[![](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/images/7)](https://sourcerer.io/fame/pavanjadhaw/pavanjadhaw/betterlockscreen/links/7)
-
-## How can I support developers?
-
-- Star our GitHub repo :star:
-- Create pull requests, submit bugs, suggest new features or documentation updates :wrench:
-
-## License
-
-Betterlockscreen is under [MIT](https://github.com/pavanjadhaw/betterlockscreen/blob/master/LICENSE) license.
-
-## Feel free to use and distribute
-
-- Hat tip to anyone who's code was used
-- Thanks to those who contributed to make it better
-- Inspiration - r/unixporn
-
-[logo]: .github/hero.png
-[website]: https://mdxjs.com
